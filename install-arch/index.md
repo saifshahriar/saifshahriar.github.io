@@ -1,3 +1,27 @@
+<b>Index</b>
+- [Install Arch Linux](#install-arch-linux)
+  - [Verify Boot Mode](#verify-boot-mode)
+  - [Make sure you have internet](#make-sure-you-have-internet)
+  - [Update the system clock](#update-the-system-clock)
+  - [Partitioning the disk](#partitioning-the-disk)
+  - [Format partitions](#format-partitions)
+  - [Mount the file systems](#mount-the-file-systems)
+  - [Installation](#installation)
+    - [Select the mirrors](#select-the-mirrors)
+    - [Install essential packages](#install-essential-packages)
+  - [Configure the system](#configure-the-system)
+    - [Fstab (contains all the drivers)](#fstab-contains-all-the-drivers)
+    - [Chroot](#chroot)
+    - [Enable network manager at boot](#enable-network-manager-at-boot)
+    - [Install a boot loader (grub)](#install-a-boot-loader-grub) 
+  - [Optional](#optional)
+    - [User setup](#user-setup)
+    - [Timezone](#timezone)
+    - [Localization](#localization)
+    - [Set users](#set-users)
+- [Install blackarch on top of arch linux](#install-blackarch-on-top-of-arch-linux)
+  - [You may now install tools from the blackarch repository](#you-may-now-install-tools-from-the-blackarch-repository) 
+
 # Install Arch Linux
 
 ## Verify Boot Mode
@@ -107,7 +131,7 @@ Now navigate up/down. That would select all the line that needs to be commented.
 
 ### Install essential packages
 ```bash
-pacstrap /mnt base base-devel linux linux-firmware vi vim networkmanager grub sudo 
+pacstrap /mnt base base-devel linux linux-firmware vi vim networkmanager git grub sudo 
 ```
 <br>
 
@@ -228,6 +252,7 @@ sudo pacman -Sg | grep blackarch
 - <b>Note</b> - it maybe be necessary to overwrite certain packages when installing blackarch tools. If you experience "failed to commit transaction" errors, use the --needed and --overwrite switches
 
 For example:
+
 ```bash
 sudo pacman -Syyu --needed blackarch --overwrite='*'
 ```
