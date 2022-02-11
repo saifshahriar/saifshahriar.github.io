@@ -115,7 +115,7 @@ arch-chroot /mnt
 ### Install some package for default and use it
 ```bash
 pacman -Sy
-pacman -S networkmanager grub sudo
+pacman -S networkmanager grub sudo vi
 systemctl enable NetworkManager
 ```
 ### Install a boot loader (grub)
@@ -147,6 +147,15 @@ Now  go to the `vim /etc/locale.conf` and add the line `LANG=en_US.UTF-8`
 ```bash
 # To setup root passwd
 passwd 
+
+# Add another user and passwd
 adduser -m saif
 passwd saif
+
+# Give user the permission
+usermod -aG wheel,audio,video,optical,storage saif
+visudo
+# Uncomment to allow members of group wheel to execute any command
 ```
+
+Now `unmount -R /mnt` remove the installation media and `reboot`
