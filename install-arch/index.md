@@ -223,13 +223,14 @@ Include = /etc/pacman.d/mirrorlist
 ```
 and uncomment the section.
 
-- <b>Tip:</b> Run ```pacman -Sl multilib``` to list all packages in the multilib repository. 32-bit library package names begin with lib32-.
-
 Now synchronize the packages and upgrade the system.
 
 ```bash
 sudo pacman -Syu
 ```
+
+- <b>Tip:</b> Run ```pacman -Sl multilib``` to list all packages in the multilib repository. 32-bit library package names begin with lib32-.
+
 <br>
 
 ## You may now install tools from the blackarch repository.
