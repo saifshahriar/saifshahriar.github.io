@@ -227,8 +227,7 @@ and uncomment the section.
 
 Now synchronize the packages and upgrade the system.
 
-```
-bash
+```bash
 sudo pacman -Syu
 ```
 <br>
