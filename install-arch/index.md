@@ -7,6 +7,7 @@ To check,
 ```bash
 ls /sys/firmware/efi/efivars
 ```
+<br>
 
 ## Make sure you have internet 
 
@@ -14,6 +15,7 @@ To make sure you have internet connection, simply ping to any valid website.
 ```bash
 ping saifshahriar.github.io
 ```
+<br>
 
 ## Update the system clock
 
@@ -25,7 +27,7 @@ To check the status simply type,
 ```bash
 timedatectl status
 ```
-
+<br>
 
 ## Partitioning the disk
 
@@ -44,6 +46,7 @@ Use ```cfdisk``` tool to partition the disks.
     - rooot
       - Size:     Rest of the space
       - Name:     ```/dev/sda3```
+<br>
 
 ## Format partitions 
 ```bash
@@ -54,28 +57,32 @@ mkfs.ext4 /dev/sda3
 # format swp
 mkswap /dev/sda2
 ```
+<br>
 
 ## Mount the file systems
 
   1. Mount `root` first:
-    ```bash
-    mount /dev/sda3 /mnt
-    ```
+  ```bash
+  mount /dev/sda3 /mnt
+  ```
   2. Boot:
-        - Now make a `boot` directory inside `/mnt`:
-          ```bash
-          mkdir /mnt/boot
-          ```
-        - Now mount `boot`:
-          ```bash
-          mount /dev/sda1 /mnt/boot
-          ```
+      - Now make a `boot` directory inside `/mnt`:
+      ```bash
+      mkdir /mnt/boot
+      ```
+      - Now mount `boot`:
+      ```bash
+      mount /dev/sda1 /mnt/boot
+      ```
   3. Mount `swp`:
-   ```bash
-   swapon /dev/sda2
-   ```
+  ```bash
+  swapon /dev/sda2
+  ```
   `lsblk` to check the partition info
-   
+<br>
+<br>
+<br>
+
 ## Installation
 ### Select the mirrors:
 ```bash
@@ -100,8 +107,9 @@ Now navigate up/down. That would select all the line that needs to be commented.
 
 ### Install essential packages
 ```bash
-pacstrap /mnt base base-devel linux linux-firmware vim
+pacstrap /mnt base base-devel linux linux-firmware vi vim networkmanager grub sudo 
 ```
+<br>
 
 ## Configure the system
 ### Fstab (contains all the drivers)
@@ -112,10 +120,8 @@ genfstab -U /mnt >> /mnt/etc/fstab
 ```bash
 arch-chroot /mnt
 ```
-### Install some package for default and use it
+### Enable network manager at boot
 ```bash
-pacman -Sy
-pacman -S networkmanager grub sudo vi
 systemctl enable NetworkManager
 ```
 ### Install a boot loader (grub)
@@ -123,6 +129,7 @@ systemctl enable NetworkManager
 grub-install /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
+<br>
 
 ## Optional
 ### User setup
@@ -159,3 +166,68 @@ visudo
 ```
 
 Now `unmount -R /mnt` remove the installation media and `reboot`
+<br>
+<br>
+<br>
+
+# Install blackarch on top of arch linux
+
+```bash
+# Run https://blackarch.org/strap.sh as root and follow the instructions.
+curl -O https://blackarch.org/strap.sh
+
+# Verify the SHA1 sum
+echo 8bfe5a569ba7d3b055077a4e5ceada94119cccef strap.sh | sha1sum -c
+
+# Set execute bit
+chmod +x strap.sh
+
+# Run strap.sh
+sudo ./strap.sh
+```
+
+Enable multilib:
+To enable multilib repository, uncomment the `[multilib]` section in `/etc/pacman.conf`.
+
+```bash
+vim /etc/pacman.conf
+```
+Find
+```bash
+[multilib]
+Include = /etc/pacman.d/mirrorlist
+```
+and uncomment the section.
+
+- <b>Tip:</b> Run ```pacman -Sl multilib``` to list all packages in the multilib repository. 32-bit library package names begin with lib32-.
+
+Now synchronize the packages and upgrade the system.
+```
+bash
+sudo pacman -Syu
+```
+<br>
+
+## You may now install tools from the blackarch repository.
+To list all of the available tools, run
+```bash
+sudo pacman -Sgg | grep blackarch | cut -d' ' -f2 | sort -u
+```
+To install all of the tools, run
+```bash
+sudo pacman -S blackarch
+```
+To install a category of tools, run
+```bash
+sudo pacman -S blackarch-<category>
+```
+To see the blackarch categories, run
+```bash
+sudo pacman -Sg | grep blackarch
+```
+- <b>Note</b> - it maybe be necessary to overwrite certain packages when installing blackarch tools. If you experience "failed to commit transaction" errors, use the --needed and --overwrite switches
+
+For example:
+```bash
+sudo pacman -Syyu --needed blackarch --overwrite='*'
+```
