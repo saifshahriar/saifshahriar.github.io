@@ -29,7 +29,7 @@
 If you have a uefi or bios 
 To check,
 ```bash
-ls /sys/firmware/efi/efivars
+<font color="green">ls /sys/firmware/efi/efivars </font>
 ```
 <br>
 
