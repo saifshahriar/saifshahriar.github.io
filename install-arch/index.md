@@ -26,10 +26,9 @@
 
 ## Verify Boot Mode
 
-If you have a uefi or bios 
-To check,
+Check if you have an efi or bios system.
 ```bash
-<font color="green">ls /sys/firmware/efi/efivars </font>
+ls /sys/firmware/efi/efivars
 ```
 <br>
 
@@ -61,7 +60,6 @@ Use ```cfdisk``` tool to partition the disks.
     - boot 
       - Size:     ```128M```
       - Bootable: ```[  * ]```
-      - Type:     ```Default/Linux```
       - Name:     ```/dev/sda1```
     - swp
       - Size:     ```1G```
@@ -114,7 +112,7 @@ vim /etc/pacman.d/mirrorlist
 ```
 ### Install essential packages
 ```bash
-pacstrap /mnt base base-devel linux linux-firmware vi vim networkmanager git grub sudo 
+pacstrap /mnt base base-devel linux linux-firmware vim networkmanager git grub opendoas 
 ```
 <br>
 
@@ -168,8 +166,39 @@ passwd saif
 
 # Give user the permission
 usermod -aG wheel,audio,video,optical,storage saif
+```
+- Configure superuser privilege: 
+  - Edit the sodoers file. (if you are using doas insted of sudo then see the next point)
+```bash
 visudo
-# Uncomment to allow members of group wheel to execute any command
+```
+Uncomment the following line 
+```diff
+## Allow members of group wheel to execute any command
+- # %wheel ALL=(ALL:ALL) ALL
++ %wheel ALL=(ALL:ALL) ALL
+
+## Uncomment to allow members of group wheel to execute any command
+- # %sudo ALL=(ALL:ALL) ALL
++ %sudo ALL=(ALL:ALL) ALL
+```
+  - doas configuration:
+Create a name `/etc/doas.conf`
+```bash
+touch /etc/doas.conf
+```
+Now add these lines to the file.
+To permit the user `saif` to execute any command as a root user:
+```
+permit saif as root
+```
+To permit any user from the `:wheel` to execute any command as a root user.
+```
+permit :wheel as root
+```
+Don't ask for password for some times:
+```
+permit persist saif as root
 ```
 
 Now `unmount -R /mnt` remove the installation media and `reboot`
