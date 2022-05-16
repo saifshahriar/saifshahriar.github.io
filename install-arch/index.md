@@ -112,23 +112,6 @@ mkswap /dev/sda2
 ```bash
 vim /etc/pacman.d/mirrorlist
 ```
-Remove everything except Asian server.
-
-```bash
-# Related VIM command
-<CTRL + SHIFT + V>
-
-Now navigate up/down. That would select all the line that needs to be commented.
-
-<SHIFT + I>
-
-# Now put the <#> in one line.
-<SHIFT + 3 (#)>
-
-# Hit escape
-<ESC>
-```
-
 ### Install essential packages
 ```bash
 pacstrap /mnt base base-devel linux linux-firmware vi vim networkmanager git grub sudo 
@@ -180,7 +163,7 @@ Now  go to the `vim /etc/locale.conf` and add the line `LANG=en_US.UTF-8`
 passwd 
 
 # Add another user and passwd
-adduser -m saif
+useradd -m saif
 passwd saif
 
 # Give user the permission
