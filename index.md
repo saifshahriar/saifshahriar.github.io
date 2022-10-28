@@ -1,5 +1,5 @@
 # Welcome
-[About Me](../about-me.html)
+[About Me](../about-me.html) [Archlinux Installation Guide](../install-arch)
 
 ## Welcome to GitHub Pages
 
