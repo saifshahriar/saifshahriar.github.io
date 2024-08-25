@@ -5,7 +5,7 @@
 
 *Didn't liek?*
 *Here's something else...*
-- [About Me](../about-me.html)
+- [About Me](../)
 - Books
 	- [GNU C Language Manual](../books/gnu-c-language-manual)
 - [Archlinux Installation Guide](../install-arch)
