@@ -42,57 +42,41 @@ So, I am basically DOOMED! hehe.
 ```
 
 ## Setups
-**Primary OS:** [Void Linux](https://voidlinux.org/) (Previously using [Artix](https://artixlinux.org/), [Arch](https://archlinux.org/) & [OpenBSD](https://www.openbsd.org/))
-
-**Secondary OS(s):** [Plan9](https://p9f.org/) - Such an elegant piece of art.
-
-**Window Manager:** [Dynamic Window Manager - DWM](https://github.com/saifshahriar/dwm-saif)
-
-**Terminal Emulator:** [Simple Terminal - st](https://github.com/saifshahriar/st) (Luke Smith's Build)
+**Primary OS:** [Void Linux](https://voidlinux.org/) (Previously using [Artix](https://artixlinux.org/), [Arch](https://archlinux.org/) & [OpenBSD](https://www.openbsd.org/))<br/>
+**Secondary OS(s):** [Plan9](https://p9f.org/) - Such an elegant piece of art.<br/>
+**Window Manager:** [Dynamic Window Manager - DWM](https://github.com/saifshahriar/dwm-saif)<br/>
+**Terminal Emulator:** [Simple Terminal - st](https://github.com/saifshahriar/st) (Luke Smith's Build)<br/>
 
 
 ## GUI Programs
-**Browser:** [Brave Browser](https://brave.com/)
-
-**File Manager:** [PCManFM](https://wiki.archlinux.org/title/PCManFM)
-
-**Image Viewer:** [Sxiv](https://github.com/xyb3rt/sxiv)
-
-**Video & Audio:** [mpv](https://mpv.io/)
-
-**Presentation:** [sent](https://tools.suckless.org/sent/)
+**Browser:** [Brave Browser](https://brave.com/)<br/>
+**File Manager:** [PCManFM](https://wiki.archlinux.org/title/PCManFM)<br/>
+**Image Viewer:** [Sxiv](https://github.com/xyb3rt/sxiv)<br/>
+**Video & Audio:** [mpv](https://mpv.io/)<br/>
+**Presentation:** [sent](https://tools.suckless.org/sent/)<br/>
 
 
 ## Terminal Programs
-**IDE/Editor:** [(Neo)Vim](https://www.vim.org/)
-
-**File Manager:*** [Yazi](https://github.com/sxyazi/yazi)
+**IDE/Editor:** [(Neo)Vim](https://www.vim.org/)<br/>
+**File Manager:*** [Yazi](https://github.com/sxyazi/yazi)<br/>
 
 
 ## Tools
-[Dmenu](https://github.com/saifshahriar/dmenu) - A suckless menu literally has the power to be anything.
-
-[Slock](https://tools.suckless.org/sent/) - A suckless screenlock.
-
-[Xmenu](https://github.com/phillbush/xmenu) - A window manager agnostic suckless context menu.
-
-[farbfeld](https://tools.suckless.org/farbfeld/) - A lossless image format.
+[Dmenu](https://github.com/saifshahriar/dmenu) - A suckless menu literally has the power to be anything.<br/>
+[Slock](https://tools.suckless.org/sent/) - A suckless screenlock.<br/>
+[Xmenu](https://github.com/phillbush/xmenu) - A window manager agnostic suckless context menu.<br/>
+[farbfeld](https://tools.suckless.org/farbfeld/) - A lossless image format.<br/>
 
 
-[LaTeX](https://www.latex-project.org/) - A bloated document preparation system. Use groff(1) instead.
-
-[groff](https://www.gnu.org/software/groff/) - Front-end for the groff(1) document formatting system.
-
-[pandoc](https://pandoc.org/) - A general markup converter.
+[LaTeX](https://www.latex-project.org/) - A bloated document preparation system. Use groff(1) instead.<br/>
+[groff](https://www.gnu.org/software/groff/) - Front-end for the groff(1) document formatting system.<br/>
+[pandoc](https://pandoc.org/) - A general markup converter.<br/>
 
 
-[fish](https://github.com/fish-shell/fish-shell) - Friendly Interactive Shell.
-
-[eza](https://github.com/eza-community/eza)  - A better ls(1) & successor of [exa](https://the.exa.website/).
-
-[bat](https://github.com/sharkdp/bat) - A better cat(1).
-
-[delta](https://github.com/dandavison/delta) - A better diff(1).
+[fish](https://github.com/fish-shell/fish-shell) - Friendly Interactive Shell.<br/>
+[eza](https://github.com/eza-community/eza)  - A better ls(1) & successor of [exa](https://the.exa.website/).<br/>
+[bat](https://github.com/sharkdp/bat) - A better cat(1).<br/>
+[delta](https://github.com/dandavison/delta) - A better diff(1).<br/>
 
 
 ## My dots
