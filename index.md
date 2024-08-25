@@ -1,14 +1,12 @@
 # Welcome
 
 **This is me**
-![saif](../assets/img/saif.webp)
-<div align="center">
-<img src="../assets/img/saif.webp" alt="weird looking guy wearing a cap with blue mask" style="width: 25%;">
-</div>
+<img src="../assets/img/saif.webp" alt="weird looking guy wearing a cap with blue mask" style="width: 45%;">
 
 *Didn't liek?*
 *Here's something else...*
-- [About Me](../)
+- About Me
+    - [Stuff that I use on daily basis](../blogs/stuff-i-use)
 - Books
 	- [GNU C Language Manual](../books/gnu-c-language-manual)
 - [Archlinux Installation Guide](../install-arch)
