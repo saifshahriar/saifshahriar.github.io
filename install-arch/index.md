@@ -173,6 +173,7 @@ usermod -aG wheel,audio,video,optical,storage saif
 visudo
 ```
 Uncomment the following line 
+
 ```diff
 ## Allow members of group wheel to execute any command
 - # %wheel ALL=(ALL:ALL) ALL
@@ -182,6 +183,7 @@ Uncomment the following line
 - # %sudo ALL=(ALL:ALL) ALL
 + %sudo ALL=(ALL:ALL) ALL
 ```
+
   - doas configuration:
 Create a name `/etc/doas.conf`
 ```bash
