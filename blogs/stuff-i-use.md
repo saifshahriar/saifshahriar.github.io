@@ -58,7 +58,7 @@ So, I am basically DOOMED! hehe.
 
 ## Terminal Programs
 **IDE/Editor:** [(Neo)Vim](https://www.vim.org/)<br/>
-**File Manager:*** [Yazi](https://github.com/sxyazi/yazi)<br/>
+**File Manager:** [Yazi](https://github.com/sxyazi/yazi)<br/>
 
 
 ## Tools
