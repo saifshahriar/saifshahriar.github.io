@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Stuff I Use</title>
+<style>
+html {
+  overflow-y: scroll;
+}
+
+body {
+  background-color: #e1e2e7;
+  max-width:50em;
+  color: #3760bf;
+  font:1.2em/1.62 sans-serif;
+  padding:0 .62em 3.24em;
+  margin: 1em auto;
+}
+
+pre, code {
+  margin: 0;
+}
+
+a {
+  color: #005386;
+}
+
+#header a {
+  text-decoration: none;
+}
+
+#headerLink {
+  color: #17a;
+  margin-left: 5px;
+}
+
+h1 {
+  margin: 1em 1ex 0.5ex 0;
+  font-size: 1.4em;
+}
+
+h2 {
+  margin: 1em 1ex 0.5ex 0;
+  font-size: 1.3em;
+}
+
+h3 {
+  margin: 1em 1ex 0.5ex 0;
+  font-size: 1.0em;
+}
+
+h4 {
+  margin: 1em 1ex 0.5ex 0;
+  font-size: 0.9em;
+}
+
+#headerSubtitle {
+  font-size: 0.75em;
+  font-style: italic;
+  margin-left: 1em;
+}
+
+#content {
+  clear: both;
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  margin: 0 0 0 200px;
+  max-width: 50em;
+  padding: 1.5em;
+}
+
+.left {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.right {
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #24283b;
+      color: #c0caf5;
+    }
+    #header {
+      background-color: #111;
+    }
+    blockquote, pre, code {
+      <!-- background-color: #000000; -->
+    }
+    a {
+      color: #56c8ff;
+    }
+    #main img[src$=svg] {
+      filter: invert(1);
+    }
+  }
+</style>
+<article>
+<header>
+<h1>Stuff that I use</h1>
+</header>
+<h2 id="intro">Intro</h2>
+<p>I have a kind of a minimal setup. I am biased and I mostly use what works for me. I mostly try to adhere to the <strong>UNIX Philosophy:</strong> <em>Do one thing and do it right</em>. Also, influenced by the <strong><a href="https://suckless.org/philosophy/">Suckless Phylosophy</a></strong>. So, I am basically DOOMED! hehe.</p>
+<pre><code>
+ ________________________________
+/ An idiot admires complexity,   \
+| A genius admires simplicity... |
+\                   —Terry Davis /
+ --------------------------------
+   \
+    \
+               |    .
+           .   |L  /|
+       _ . |\ _| \--+._/| .
+      / ||\| Y J  )   / |/| ./
+     J  |)&#39;( |        ` F`.&#39;/
+   -&lt;|  F         __     .-&lt;
+     | /       .-&#39;. `.  /-. L___
+     J \      &lt;    \  | | O\|.-&#39;
+   _J \  .-    \/ O | | \  |F
+  &#39;-F  -&lt;_.     \   .-&#39;  `-&#39; L__
+ __J  _   _.     &gt;-&#39;  )._.   |-&#39;
+`-|.&#39;   /_.           \_|   F
+   /.-   .                _.&lt;
+  /&#39;    /.&#39;             .&#39;  `\
+   /L  /&#39;   |/      _.-&#39;-\
+  /&#39;J       ___.---&#39;\|
+    |\  .--&#39; V  | `. `
+    |/`. `-.     `._)
+       / .-.\
+ VK    \ (  `\
+        `.\</code></pre>
+<h2 id="setups">Setups</h2>
+<ul>
+<li><strong>Primary OS:</strong> <a href="https://voidlinux.org/">Void Linux</a> (Previously using <a href="https://artixlinux.org/">Artix</a>, <a href="https://archlinux.org/">Arch</a> &amp; <a href="https://www.openbsd.org/">OpenBSD</a>)</li>
+<li><strong>Secondary OS(s):</strong> <a href="https://p9f.org/">Plan9</a> - Such an elegant piece of art.</li>
+<li><strong>Window Manager:</strong> <a href="https://github.com/saifshahriar/dwm-saif">Dynamic Window Manager - DWM</a></li>
+<li><strong>Terminal Emulator:</strong> <a href="https://github.com/saifshahriar/st">Simple Terminal - st</a> (Luke Smith’s Build)</li>
+</ul>
+<h2 id="gui-programs">GUI Programs</h2>
+<ul>
+<li><strong>Browser:</strong> <a href="https://brave.com/">Brave Browser</a></li>
+<li><strong>File Manager:</strong> <a href="https://wiki.archlinux.org/title/PCManFM">PCManFM</a></li>
+<li><strong>Image Viewer:</strong> <a href="https://github.com/xyb3rt/sxiv">Sxiv</a></li>
+<li><strong>Video &amp; Audio:</strong> <a href="https://mpv.io/">mpv</a></li>
+<li><strong>Presentation:</strong> <a href="https://tools.suckless.org/sent/">sent</a></li>
+</ul>
+<h2 id="terminal-programs">Terminal Programs</h2>
+<ul>
+<li><strong>IDE/Editor:</strong> <a href="https://www.vim.org/">(Neo)Vim</a></li>
+<li><strong>File Manager:</strong> <a href="https://github.com/sxyazi/yazi">Yazi</a></li>
+</ul>
+<h2 id="tools">Tools</h2>
+<ul>
+<li><p><a href="https://github.com/saifshahriar/dmenu">Dmenu</a> - A suckless menu literally has the power to be anything.<br/></p></li>
+<li><p><a href="https://tools.suckless.org/sent/">Slock</a> - A suckless screenlock.</p></li>
+<li><p><a href="https://github.com/phillbush/xmenu">Xmenu</a> - A window manager agnostic suckless context menu.</p></li>
+<li><p><a href="https://tools.suckless.org/farbfeld/">farbfeld</a> - A lossless image format.</p></li>
+<li><p><a href="https://www.latex-project.org/">LaTeX</a> - A bloated document preparation system. Use groff(1) instead.</p></li>
+<li><p><a href="https://www.gnu.org/software/groff/">groff</a> - Front-end for the groff(1) document formatting system.</p></li>
+<li><p><a href="https://pandoc.org/">pandoc</a> - A general markup converter.</p></li>
+<li><p><a href="https://github.com/fish-shell/fish-shell">fish</a> - Friendly Interactive Shell.</p></li>
+<li><p><a href="https://github.com/eza-community/eza">eza</a> - A better ls(1) &amp; successor of <a href="https://the.exa.website/">exa</a>.</p></li>
+<li><p><a href="https://github.com/sharkdp/bat">bat</a> - A better cat(1).</p></li>
+<li><p><a href="https://github.com/dandavison/delta">delta</a> - A better diff(1).</p></li>
+</ul>
+<h2 id="my-dots">My dots</h2>
+<p>You can find them here: <a href="https://github.com/saifshahriar/dotfiles">https://github.com/saifshahriar/dotfiles</a></p>
+<h2 id="see-also"><strong>See also</strong></h2>
+<ul>
+<li>Stuff that sucks: <a href="https://suckless.org/rocks/">https://suckless.org/rocks/</a></li>
+<li>Stuff that rocks: <a href="https://suckless.org/rocks/">https://suckless.org/rocks/</a></li>
+<li>List of harmful software: <a href="https://harmful.cat-v.org/software/">https://harmful.cat-v.org/software/</a></li>
+<li>The web is a bloat: <a href="https://suckless.org/sucks/web/">https://suckless.org/sucks/web/</a></li>
+</ul>
+</article>
+</html>
