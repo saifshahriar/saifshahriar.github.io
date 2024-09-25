@@ -9,6 +9,7 @@
     - [Stuff that I use on daily basis](../blogs/stuff-i-use-webv.html)
 - Blogs
     - [Archlinux Installation Guide](../blogs/install-arch)
+    - [Obscure Useful Commands](../blogs/obscure-useful-commands)
 - Projects
     - [A Bloated Hex Color Code Generator](../projects/hex-color-generator)
 - Books
