@@ -23,44 +23,51 @@ need to do.
 1. Backup the repo your with all the latest changes. In case you make some
    mistake. Also make sure to commit any changes that you might have made to the
    repo but have not pushed yet.
-
-```fish
-cp -r /path/to/repo /path/to/repo.bak
-```
+   ```fish
+   cp -r /path/to/repo /path/to/repo.bak
+   ```
 
 2. Do a fresh commit of the repo and cd inside it:
-```fish
-git clone git@github.com:user/repo.git
-cd repo
-```
+   ```fish
+   git clone git@github.com:user/repo.git
+   cd repo
+   ```
 
 3. Install [git-filter-repo](https://github.com/newren/git-filter-repo). We are
    going to use this tool to overwrite our commit history.
 
-**Debian/Ubuntu/Mint**:
-```fish
-apt install git-filter-repo
-```
-**Arch Linux:**
-```fish
-pacman -S git-filter-repo
-```
-**Void Linux:**
-```fish
-xbps-install git-filter-repo
-```
-*Use `sudo` if needed.*
+   **Debian/Ubuntu/Mint**:
+   ```fish
+   apt install git-filter-repo
+   ```
+   **Arch Linux:**
+   ```fish
+   pacman -S git-filter-repo
+   ```
+   **Void Linux:**
+   ```fish
+   xbps-install git-filter-repo
+   ```
+   *Use `sudo` if needed.*
 
-Others follow the [link](https://github.com/newren/git-filter-repo).
+   Others follow the [link](https://github.com/newren/git-filter-repo).
 
-4. Overwrite the repo's commit history:
-```fish
-git filter-repo --commit-callback '
-if commit.author_email == b"private@mail.com":
-commit.author_email = b"public@mail.com"
-if commit.committer_email == b"private@mail.com":
-commit.committer_email = b"public@mail.com"
-'
-```
-Change `private@mail.com` with your *unwanted exposed mail address* and
-`public@mail.com` with your new mail address.
+   4. Overwrite the repo's commit history:
+   ```fish
+   git filter-repo --commit-callback '
+   if commit.author_email == b"private@mail.com":
+   commit.author_email = b"public@mail.com"
+   if commit.committer_email == b"private@mail.com":
+   commit.committer_email = b"public@mail.com"
+   '
+   ```
+   Change `private@mail.com` with your *unwanted exposed mail address* and
+   `public@mail.com` with your new mail address.
+
+   5. Now force push all the changes.
+   ```fish
+   git push --force --all
+   ```
+
+   Thats it! You can see if your private email is still showing in the commit
+   history by running `git push --force --all`.
