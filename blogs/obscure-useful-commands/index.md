@@ -70,4 +70,4 @@ need to do.
    ```
 
    Thats it! You can see if your private email is still showing in the commit
-   history by running `git push --force --all`.
+   history by running `git log | grep private@mail.com`.
