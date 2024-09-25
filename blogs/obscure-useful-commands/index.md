@@ -10,7 +10,7 @@ back when you need them. I have tried keeping every section short and concise.
 No BS.
 
 ## Table of Contents
-- [Git](##Git)
+- [Git](#git)
     - [Edit a git commit history to prevent your email from showing up](Edit a git commit history to prevent your email from showing up)
 
 ## Git
