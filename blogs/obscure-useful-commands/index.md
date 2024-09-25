@@ -1,0 +1,66 @@
+---
+Author: Saif Shahriar
+Date: Thu, 2024-09-26 02:52 +0600
+---
+
+# Obscure Commands That Are Useful
+
+**Intro:** This post I have tried talking about some obscure commands, that can save your
+back when you need them. I have tried keeping every section short and concise.
+No BS.
+
+## Table of Contents
+- [Git](##Git)
+    - [Edit a git commit history to prevent your email from showing up](Edit a git commit history to prevent your email from showing up)
+
+## Git
+### Edit a git commit history to prevent your email from showing up
+**Desc:** Suppose you have accidentally revealed your <private@mail.com> by
+commiting and pusing it to github. How do you safely change that email to
+<public@mail.com> so that it overwrites your commit history? Here is what you
+need to do.
+
+1. Backup the repo your with all the latest changes. In case you make some
+   mistake. Also make sure to commit any changes that you might have made to the
+   repo but have not pushed yet.
+
+```fish
+cp -r /path/to/repo /path/to/repo.bak
+```
+
+2. Do a fresh commit of the repo and cd inside it:
+```fish
+git clone git@github.com:user/repo.git
+cd repo
+```
+
+3. Install [git-filter-repo](https://github.com/newren/git-filter-repo). We are
+   going to use this tool to overwrite our commit history.
+
+**Debian/Ubuntu/Mint**:
+```fish
+apt install git-filter-repo
+```
+**Arch Linux:**
+```fish
+pacman -S git-filter-repo
+```
+**Void Linux:**
+```fish
+xbps-install git-filter-repo
+```
+*Use `sudo` if needed.*
+
+Others follow the [link](https://github.com/newren/git-filter-repo).
+
+4. Overwrite the repo's commit history:
+```fish
+git filter-repo --commit-callback '
+if commit.author_email == b"private@mail.com":
+commit.author_email = b"public@mail.com"
+if commit.committer_email == b"private@mail.com":
+commit.committer_email = b"public@mail.com"
+'
+```
+Change `private@mail.com` with your *unwanted exposed mail address* and
+`public@mail.com` with your new mail address.
