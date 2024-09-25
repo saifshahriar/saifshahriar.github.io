@@ -11,7 +11,7 @@ No BS.
 
 ## Table of Contents
 - [Git](#git)
-    - [Edit a git commit history to prevent your email from showing up](Edit a git commit history to prevent your email from showing up)
+    - [Edit a git commit history to prevent your email from showing up](#edit-a-git-commit-history-to-prevent-your-email-from-showing-up)
 
 ## Git
 ### Edit a git commit history to prevent your email from showing up
