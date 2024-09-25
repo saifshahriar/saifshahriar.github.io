@@ -52,7 +52,7 @@ need to do.
 
    Others follow the [link](https://github.com/newren/git-filter-repo).
 
-   4. Overwrite the repo's commit history:
+4. Overwrite the repo's commit history:
    ```fish
    git filter-repo --commit-callback '
    if commit.author_email == b"private@mail.com":
@@ -64,7 +64,7 @@ need to do.
    Change `private@mail.com` with your *unwanted exposed mail address* and
    `public@mail.com` with your new mail address.
 
-   5. Now force push all the changes.
+5. Now force push all the changes.
    ```fish
    git push --force --all
    ```
