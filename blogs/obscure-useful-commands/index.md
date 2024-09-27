@@ -12,6 +12,7 @@ No BS.
 ## Table of Contents
 - [Git](#git)
     - [Edit commit history to prevent private email from showing up](#edit-commit-history-to-prevent-private-email-from-showing-up)
+    - [Delete Commit History](#delete-commit-history)
 
 ## Git
 ### Edit commit history to prevent private email from showing up
@@ -71,3 +72,37 @@ need to do.
 
    Thats it! You can see if your private email is still showing in the commit
    history by running `git log | grep private@mail.com`.
+
+### Delete Commit History
+**Desc:** Commits can be undone, and you can erase the history just like that.
+ft. `git reset`.
+
+1. Use `git log` to see your commit history.
+2. After identifying which commit to erase, run:
+   ```fish
+   git reset --hard <commit-hash>
+   ```
+   Example:
+   ```fish
+   git reset --hard 0ceef5d2d76a88d07e2e4f8e050cc082ee31b4c4
+   ```
+   Here, `0ceef5d2d76a88d07e2e4f8e050cc082ee31b4c4` represents unique the hash
+   for the commit.
+
+   This command will delete the entire commit history up until the commit:
+   `0ceef5d2d76a88d07e2e4f8e050cc082ee31b4c4`.
+
+   You can also do the same using HEAD~n.
+   Example:
+   ```fish
+   git reset --hard HEAD~5
+   ```
+   This will erase the last 5 commits from your history.
+3. Verify that your desired commit is gone forever from the face of the earth.
+   ```fish
+   git log
+   ```
+4. Now, **force push** your changes.
+   ```fish
+   git push --force --all
+   ```
