@@ -11,10 +11,10 @@ No BS.
 
 ## Table of Contents
 - [Git](#git)
-    - [Edit a git commit history to prevent your email from showing up](#edit-a-git-commit-history-to-prevent-your-email-from-showing-up)
+    - [Edit commit history to prevent private email from showing up](#edit-commit-history-to-prevent-private-email-from-showing-up)
 
 ## Git
-### Edit a git commit history to prevent your email from showing up
+### Edit commit history to prevent private email from showing up
 **Desc:** Suppose you have accidentally revealed your <private@mail.com> by
 commiting and pusing it to github. How do you safely change that email to
 <public@mail.com> so that it overwrites your commit history? Here is what you
