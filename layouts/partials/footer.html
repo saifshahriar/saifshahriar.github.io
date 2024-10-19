@@ -1,0 +1,5 @@
+<div class="site-footer" style="text-align: center;">
+	{{ $footerContent := readFile "layouts/footer.md" }}
+	{{ $footerContent = replace $footerContent "$YEAR" (string (now.Year)) }}
+	{{ $footerContent | markdownify }}
+</div>

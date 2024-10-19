@@ -1,0 +1,54 @@
+body .table h1 {
+  color: orange;
+  font-family: "Handlee", cursive;
+}
+body .facebook {
+  display: flex;
+  justify-content: center;
+  background-color: #1F2223;
+  color: white;
+  margin: 0px;
+  padding: 50px;
+  border-radius: 8px;
+}
+body .facebook .login {
+  background-color: #181A1B;
+  padding-top: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+}
+body .facebook .login input {
+  color: #5F5C56;
+  background-color: #181A1B;
+  border-color: #5F5C56;
+  height: 40px;
+  width: 400px;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 8px;
+}
+body .facebook .login input[type=button], body .facebook .login input[type=submit], body .facebook .login input[type=reset] {
+  background-color: #1259B7;
+  border: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  height: 50px;
+  width: 400px;
+}
+body .facebook p {
+  display: flex;
+  justify-content: center;
+}
+body .facebook a {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
