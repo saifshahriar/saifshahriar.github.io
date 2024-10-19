@@ -2,6 +2,7 @@
 title="Programs that I use on a daily basis"
 author="Saif Shahriar"
 date="2024-10-19"
+mathjax=true
 +++
 
 ## Intro
@@ -64,7 +65,7 @@ So, I am basically DOOMED! hehe.
 - [Xmenu](https://github.com/phillbush/xmenu) - A window manager agnostic suckless context menu.
 - [farbfeld](https://tools.suckless.org/farbfeld/) - A lossless image format.
 
-- [LaTeX](https://www.latex-project.org/) - A bloated document preparation system. Use groff(1) instead.
+- [$L^{A}T_{E}X$](https://www.latex-project.org/) - A bloated document preparation system. Use groff(1) instead.
 - [groff](https://www.gnu.org/software/groff/) - Front-end for the groff(1) document formatting system.
 - [pandoc](https://pandoc.org/) - A general markup converter.
 
