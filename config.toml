@@ -1,7 +1,7 @@
 baseurl = "https://example.com/"
 languageCode = "en-us"
 theme = "nostyleplease"
-paginate = 5
+pagination.pagerSize = 5
 
 [markup]
   [markup.goldmark]
@@ -34,6 +34,9 @@ paginate = 5
     back_home_text = ".."
     date_format = "2006-01-02"
     isListGroupByDate = false
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
 # [params]
 #   contentTypeName = "posts"
 #   showMenuItems = 2

@@ -2,6 +2,8 @@
 title="Obscure Useful Commands"
 author="Saif Shahriar"
 date = "2024-06-01"
+categories = ["command", "linux"]
+tags = ["software", "linux"]
 +++
 
 # Obscure Commands That Are Useful

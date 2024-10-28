@@ -1,0 +1,19 @@
+<h1>Tags</h1>
+<ul>
+    {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+    <li>
+        <a href="{{ (index $taxonomy 0).Permalink }}">{{ $name }}</a>
+        ({{ len $taxonomy }})  <!-- Count of posts for the tag -->
+    </li>
+    {{ end }}
+</ul>
+
+<h1>Categories</h1>
+<ul>
+    {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+    <li>
+        <a href="{{ (index $taxonomy 0).Permalink }}">{{ $name }}</a>
+        ({{ len $taxonomy }})  <!-- Count of posts for the category -->
+    </li>
+    {{ end }}
+</ul>

@@ -4,8 +4,8 @@ date = 2022-08-25T21:30:04+08:00
 draft = false
 +++
 
-Webpage of Mim er JINN
-======================
+⚠️ This Webpage is Under Construction
+====================================
 
 # Welcome
 
@@ -15,6 +15,13 @@ Webpage of Mim er JINN
 
 *Didn't liek?*
 *Here's something else...*
+
+---
+My Stuff
+
+Posts by [[tags](/tags)] [[categories](/categories)]
+
+
 - About Me
     - [Stuff that I use on daily basis](./blogs/stuff-i-use)
 - Blogs
