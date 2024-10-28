@@ -1,4 +1,4 @@
 ---
-© $YEAR Saif Shahriar
+© 2021-$YEAR Saif Shahriar
 
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+Licensed under the [MIT License](https://opensource.org/licenses/MIT).
