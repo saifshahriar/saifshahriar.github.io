@@ -2,7 +2,7 @@
 title = "Arch Linux Installation Handbook"
 author = "Saif Shahriar"
 date = "2021-10-19"
-category = "example2"
+categories = ["A", "B"]
 +++
 <b>Index</b>
 - [Install Arch Linux](#install-arch-linux)
