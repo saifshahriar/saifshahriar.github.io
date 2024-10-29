@@ -23,7 +23,7 @@ That said, I’ll still be using GitHub, SourceHut, and a few other platforms, s
 I’m not disappearing from the digital space entirely.
 
 How to Contact Me
-=================
+-----------------
 I could give you my IRC channel link, but I doubt any of you would know how to
 use it. Lol. XD
 
