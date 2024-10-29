@@ -33,9 +33,9 @@ international one, so you might as well be out of luck reaching me by my phone.
 
 
 Here’s where you can reach me:
-Email: Saif Shahriar <sh.saif@proton.me>
-Signal: https://signal.me/#eu/XcI92uGsERqktYiWxykpWNHZ3Ku9REFz5BrrIDpKv8bqtPoZZTxLp7htm2r_eENG
+- Email: Saif Shahriar <sh.saif@proton.me>
+- Signal: https://signal.me/#eu/XcI92uGsERqktYiWxykpWNHZ3Ku9REFz5BrrIDpKv8bqtPoZZTxLp7htm2r_eENG
 
 I’ll post any updates on my website. If you care, follow the RSS feed:
-Website: https://saifshahriar.github.io
-RSS: https://saifshahriar.github.io/index.xml
+- Website: https://saifshahriar.github.io
+- RSS: https://saifshahriar.github.io/index.xml
