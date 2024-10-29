@@ -1,12 +1,10 @@
 +++
+title = "Leaving Social Media (and Maybe the Digital World(?))"
 author = "Saif Shahriar"
 date = "2024-10-29"
 categories = ["personal"]
 tags = ["personal", "digital-media"]
 +++
-Leaving Social Media (and Maybe the Digital World(?))
-===================================================
-
 TL;DR: I’m leaving social media for an indefinite(?) period and have no plans to
 return anytime soon.
 
