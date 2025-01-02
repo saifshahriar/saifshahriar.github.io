@@ -134,7 +134,7 @@ So, I am basically DOOMED! hehe.
 ## Browser Extensions
 This part is so bloated. Stay away...
 - **General:**
-    - [Dark Reader](https://darkreader.org/): Heals you eyes by turning every
+    - [Dark Reader](https://darkreader.org/): Heals your eyes by turning every
     webpage dark.
     - [Scrollbar Customizer](https://chromewebstore.google.com/detail/scrollbar-customizer/flffekjijpabhjgpoapooggncnmcjopa):
     Hides ugly scrollbar in chromium and saves spaces.
@@ -168,6 +168,7 @@ You can find them here:
 - Stuff that rocks: [https://suckless.org/rocks/](https://suckless.org/rocks/)
 - List of harmful software: [https://harmful.cat-v.org/software/](https://harmful.cat-v.org/software/)
 - The web is a bloat: [https://suckless.org/sucks/web/](https://suckless.org/sucks/web/)
+- Tons of awesome terminal and TUI programmes everyday: [https://terminaltrove.com/new/](https://terminaltrove.com/new/)
 
 [^1]: Firefox is slow on older hardware. I might write an article and update
     this section later.
