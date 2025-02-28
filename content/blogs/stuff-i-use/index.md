@@ -10,7 +10,7 @@ I have a sorta' minimal setup. I am biased and I mostly use what works for me.
 I, for the most part try to adhere to the **UNIX Philosophy:**
 > Do one thing and do it right.
 
-Also, influenced by the **[Suckless Phylosophy](https://suckless.org/philosophy/)**.
+Also, influenced by the **[Suckless Philosophy](https://suckless.org/philosophy/)**.
 So, I am basically DOOMED! hehe.
 
 ```text
@@ -75,7 +75,7 @@ So, I am basically DOOMED! hehe.
   lifestyle for me. I can't think of using any other text editor except vim.
   But, the motion, I use it everywhere I can. Nowadays, I use Neovim
   (technically the same thing or not). It's a bit faster. But, I do feel
-  overwhelmed by the lua api. Hehe.
+  overwhelmed by the lua api sometimes. Hehe.
 
   NO, I donot use many plugins. Just a few of them that makes my life easier.
 
@@ -102,9 +102,8 @@ So, I am basically DOOMED! hehe.
   day-to-day most used
   extensions.
 - **File Manager:** I for the most part donot use or need a file manager. `cd`
-  is enough. If I must have to use a file manager, it's
-  [lf](https://github.com/gokcehan/lf) or for GUI it's
-  [PCManFM](https://wiki.archlinux.org/title/PCManFM).
+  is enough. If I must use a file manager, [lf](https://github.com/gokcehan/lf)
+  is enough or for GUI it's [PCManFM](https://wiki.archlinux.org/title/PCManFM).
 - **Image Viewer:** [Sxiv](https://github.com/xyb3rt/sxiv). Why not? Suckless,
   fast, extensible.
 - **Video & Audio:** [mpv](https://mpv.io/) is THE BEST video player ever
@@ -144,10 +143,10 @@ This part is so bloated. Stay away...
     - [Firenvim](https://github.com/glacambre/firenvim): Turns any text field
     into a (neo)vim buffer.
 - **Privacy:**
-    - [uBlock Origin](https://ublockorigin.com/): Unfortunately dead in the
+    - [uBlock Origin](https://ublockorigin.com/): Unfortunately dead on the
       chormium side. :(
     - [User Agent Switcher](https://github.com/ray-lothian/UserAgent-Switcher)
-- **Competitive Programming:** I do Competitive Programming. :D
+- **Competitive Programming:** I do do Competitive Programming. :D
     - [Carrot](): Rating predictor for Codeforces.
     - [CF Analytics](): Analyse Codeforces profiles.
     - [CF World Standings](): Filters the standings for a given contest on
