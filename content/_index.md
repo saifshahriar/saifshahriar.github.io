@@ -28,6 +28,6 @@ Posts by [[tags](/tags)] [[categories](/categories)]
     - [Archlinux Installation Guide](./blogs/install-arch)
     - [Obscure Useful Commands](../blogs/obscure-useful-commands)
 - Projects
-    - [A Minimal Hex Color Code Generator/Previewer](../projects/hex-color-generator)
+    - [A Minimal Hex Color Code Generator/Previewer](https://hex-color-previewer.vercel.app/)
 - Books
     - [GNU C Language Manual](../books/gnu-c-language-manual)
