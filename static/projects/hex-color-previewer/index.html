@@ -1,133 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Hex Color Generator</title>
-	<!-- <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet"> -->
-	<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Nova+Mono" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Rampart+One" rel="stylesheet">
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hex Color Generator</title>
+		<!-- <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet"> -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Major+Mono+Display"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nova+Mono"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rampart+One"
+			rel="stylesheet"
+		/>
+	</head>
 
-<body>
-	<script>
-		const backgroundColor = '#0f0f0f';
-		const foregroundColor = '#ffffff';
-		
-		// set webpages inital color to black
-		document.body.style.backgroundColor = backgroundColor;
-		
-		// create a div with a h1 tag and an input inside of it
-		var div = document.createElement('div');
-		div.innerHTML = '<h1 align="center" id="en">Hello World!</h1><h1 id="jpn">こんにちは</h1><p align="center"><input type="text" id="input" placeholder="Enter a hex color code (#0f0f0f)"/></p>';
-		document.body.appendChild(div);
+	<body>
+		<script>
+			const backgroundColor = "#0f0f0f";
+			const foregroundColor = "#ffffff";
 
-		// set the div's initial color to white
-		div.style.color = foregroundColor;
+			// set webpages inital color to black
+			document.body.style.backgroundColor = backgroundColor;
 
-		//center the div with absolute positioning
-		div.style.position = 'absolute';
-		div.style.left = '50%';
-		div.style.top = '50%';
-		div.style.transform = 'translate(-50%, -50%)';
+			// create a div with a h1 tag and an input inside of it
+			var div = document.createElement("div");
+			div.innerHTML =
+				'<h1 align="center" id="en">Hello World!</h1><h1 id="jpn">こんにちは</h1><p align="center"><input type="text" id="input" placeholder="Enter a hex color code (#0f0f0f)"/></p>';
+			document.body.appendChild(div);
 
-		// add the input event listener to the input field
-		div.querySelector("input").addEventListener("input", function (e) {
+			// set the div's initial color to white
+			div.style.color = foregroundColor;
 
-			var val = e.target.value;					// get the value of the input field
+			//center the div with absolute positioning
+			div.style.position = "absolute";
+			div.style.left = "50%";
+			div.style.top = "50%";
+			div.style.transform = "translate(-50%, -50%)";
 
-			if (val[0] != '#') {
-				console.log("'#' is missing");			// if the first character is not '#'
-				val = '#' + val;						// add '#' to the beginning of the string
-			}
+			// add the input event listener to the input field
+			div.querySelector("input").addEventListener("input", function (e) {
+				var val = e.target.value; // get the value of the input field
 
-			var len = val.substr(1, val.length).length;	// get the length of val
+				if (val[0] != "#") val = "#" + val;
 
-			if (len > 6) console.log("Length limit is exceeded");
-			else {
-				switch (len) {
-					case 1:
-						val += val[1] + val[1] + val[1] + val[1] + val[1];
-						console.log("val is now: " + val); break;
-					case 2:
-						val += val.substr(1, 2) + val.substr(1, 2);
-						console.log("val is now: " + val); break;
-					case 3:
-						val += val.substr(1, 3);
-						console.log("val is now: " + val); break;
-					case 4:
-						val += val.substr(1, 2);
-						console.log("val is now: " + val); break;
-					case 5:
-						val += val.substr(1, 1);
-						console.log("val is now: " + val); break
-					default:
-						console.log("val is now: " + val); break;
+				var len = val.substr(1, val.length).length; // get the length of val
+
+				if (len > 6) console.log("Length limit is exceeded");
+				else {
+					switch (len) {
+						case 1:
+							val += val[1] + val[1] + val[1] + val[1] + val[1];
+							console.log("val is now: " + val);
+							break;
+						case 2:
+							val += val.substr(1, 2) + val.substr(1, 2);
+							console.log("val is now: " + val);
+							break;
+						case 3:
+							val += val.substr(1, 3);
+							console.log("val is now: " + val);
+							break;
+						case 4:
+							val += val.substr(1, 2);
+							console.log("val is now: " + val);
+							break;
+						case 5:
+							val += val.substr(1, 1);
+							console.log("val is now: " + val);
+							break;
+						default:
+							console.log("val is now: " + val);
+							break;
+					}
 				}
+				// if the value is not a valid color code, do nothing
+				if (val.match(/^#[0-9a-f]{6}$/i)) {
+					document.body.style.backgroundColor = val;
+					// if the color is too dark, make h1 text white
+					div.style.color = getContrastColor(val);
+				} else {
+					document.body.style.backgroundColor = backgroundColor;
+					div.style.color = foregroundColor;
+				}
+			});
+
+			// takes a hex color code and returns the color that is opposite to it
+			function getContrastColor(color) {
+				// convert a hex color code to rgb
+				var rgb = hexToRgb(color);
+				// determine if the color is too dark or too light
+				var isLight =
+					(rgb.r * 299 + rgb.g * 587 + rgb.b * 114) / 1000 > 125; // or 186
+				return isLight ? "#000000" : "#ffffff";
 			}
-			// if the value is not a valid color code, do nothing
-			if (val.match(/^#[0-9a-f]{6}$/i)) {
-				document.body.style.backgroundColor = val;
-				// if the color is too dark, make h1 text white
-				div.style.color = getContrastColor(val);
-			} else {
-				document.body.style.backgroundColor = backgroundColor;
-				div.style.color = foregroundColor;
+
+			function hexToRgb(hex) {
+				var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(
+					hex,
+				);
+				return result
+					? {
+							r: parseInt(result[1], 16),
+							g: parseInt(result[2], 16),
+							b: parseInt(result[3], 16),
+						}
+					: null;
 			}
-		});
+		</script>
+		<style>
+			h1 {
+				font-size: 250%;
+				text-align: center;
+			}
 
-		// takes a hex color code and returns the color that is opposite to it
-		function getContrastColor(color) {
-			// convert a hex color code to rgb
-			var rgb = hexToRgb(color);
-			// determine if the color is too dark or too light
-			var isLight = (rgb.r * 299 + rgb.g * 587 + rgb.b * 114) / 1000 > 125; // or 186
-			return isLight ? '#000000' : '#ffffff';
-		}
+			#en {
+				font-family: "Major Mono Display", monospace;
+			}
 
-		function hexToRgb(hex) {
-			var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-			return result ? {
-				r: parseInt(result[1], 16),
-				g: parseInt(result[2], 16),
-				b: parseInt(result[3], 16)
-			} : null;
-		}
+			#jpn {
+				font-family: "Rampart One", cursive;
+			}
 
-	</script>
-	<style>
-		h1 {
-			font-size: 250%;
-			text-align: center;
-		}
+			#input {
+				background-color: black;
+				color: yellow;
+				width: 80%;
+				height: 25%;
+				font-size: 100%;
+				font-family: "Nova Mono", monospace;
+				text-align: center;
+				border: 1px solid black;
+				border-radius: 8px;
+				margin: 0;
+				padding: 10px;
+			}
 
-		#en {
-			font-family: 'Major Mono Display', monospace;
-		}
-
-		#jpn {
-			font-family: 'Rampart One', cursive;
-		}
-
-		#input {
-			background-color: black;
-			color: yellow;
-			width: 80%;
-			height: 25%;
-			font-size: 100%;
-			font-family: 'Nova Mono', monospace;
-			text-align: center;
-			border: 1px solid black;
-			border-radius: 8px;
-			margin: 0;
-			padding: 10px;
-		}
-
-		::placeholder {
-			color: yellow;
-		}
-	</style>
-</body>
+			::placeholder {
+				color: yellow;
+			}
+		</style>
+	</body>
 </html>
