@@ -1,0 +1,13 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+<ul>
+	{{ range sort .Data.Terms ".Page.Lastmod" "desc" }}
+	<li>
+		{{ (index . 0).Page.Lastmod.Format "2006-01-02" }}
+		<a href="{{ urlize .Page.Title }}">{{ .Page.Title }}</a>
+		({{ len . }})
+	</li>
+	{{ end }}
+</ul>
+{{ end }}
