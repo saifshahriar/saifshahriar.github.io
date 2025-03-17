@@ -17,13 +17,16 @@ date: 1970-01-01
 
 {{% center %}}
 Haven't you seen me already? Lol!
+{{% /center %}}
 
+{{% justify %}}
 Name is Saif Shahriar, a Computer Science student, FOSS advocate, competitive
 programmer, Linux nerd, research enthusiast from Bangladesh. Currently, working
 as a software engineering intern.
+{{% /justify %}}
 
 
-
+{{% center %}}
 [[portfolio](../portfolio/)] [[projects](../projects/)] [[github](https://github.com/saifshahriar)]
 [[youtube]()]
 {{% /center %}}
