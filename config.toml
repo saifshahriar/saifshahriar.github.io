@@ -35,6 +35,7 @@ pagination.pagerSize = 5
     date_format = "2006-01-02"
     isListGroupByDate = false
 [taxonomies]
+  category = 'categories'
   tag = 'tags'
 # [params]
 #   contentTypeName = "posts"
