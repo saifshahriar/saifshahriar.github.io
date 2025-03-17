@@ -2,27 +2,24 @@
 title="Obscure Useful Commands"
 author="Saif Shahriar"
 date = "2024-06-01"
+toc = true
+tocBorder = true
 categories = ["command", "linux"]
 tags = ["software", "linux"]
 +++
 
-# Obscure Commands That Are Useful
-
-**Intro:** This post I have tried talking about some obscure commands, that can save your
+## Intro
+This post I have tried talking about some obscure commands, that can save your
 back when you need them. I have tried keeping every section short and concise.
 No BS.
 
-## Table of Contents
-- [Git](#git)
-    - [Edit commit history to prevent private email from showing up](#edit-commit-history-to-prevent-private-email-from-showing-up)
-    - [Delete Commit History](#delete-commit-history)
-
 ## Git
-### Edit commit history to prevent private email from showing up
-**Desc:** Suppose you have accidentally revealed your <private@mail.com> by
+### Edit commit history to prevent private email address from showing up
+> **Desc:** Suppose you have accidentally revealed your <private@mail.com> by
 commiting and pusing it to github. How do you safely change that email to
-<public@mail.com> so that it overwrites your commit history? Here is what you
-need to do.
+<public@mail.com> so that it overwrites your commit history?
+
+Here is what you need to do.
 
 1. Backup the repo your with all the latest changes. In case you make some
    mistake. Also make sure to commit any changes that you might have made to the

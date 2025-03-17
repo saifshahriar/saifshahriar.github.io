@@ -31,7 +31,6 @@ Currently, I don’t use WhatsApp, Telegram, or any proprietary platform, so don
 try contacting me there. Also, I’m switching from my GP phone number to an
 international one, so you might as well be out of luck reaching me by my phone.
 
-
 Here’s where you can reach me:
 - Email: Saif Shahriar <sh.saif@proton.me>
 - Signal: https://signal.me/#eu/XcI92uGsERqktYiWxykpWNHZ3Ku9REFz5BrrIDpKv8bqtPoZZTxLp7htm2r_eENG

@@ -2,6 +2,8 @@
 title="Programs that I use on a daily basis"
 author="Saif Shahriar"
 date="2024-10-19"
+toc = true
+tocBorder = true
 mathjax=true
 +++
 
@@ -45,7 +47,8 @@ So, I am basically DOOMED! hehe.
 ```
 
 ## Setups
-- **Operating System:** I use [Void Linux](https://voidlinux.org/). Which is an
+### Operating System
+  I use [Void Linux](https://voidlinux.org/). Which is an
   independent distribution. I am a fan of `xbps` package manager. It's fast and
   doesn't break as much as Artix (or Arch) does, which I had been using for the
   past 5 years. Also, it does not use *SystemD*.
@@ -56,22 +59,25 @@ So, I am basically DOOMED! hehe.
   As for my toy (read *research*) *Operating System*, I use
   [Plan9](https://p9f.org/). And my remark is-
   > Such an elegant piece of art.
-- **Window Manager:**
+
+### Window Manager
   [Dynamic Window Manager - DWM](https://github.com/saifshahriar/dwm-saif). It's
   fast, hackable, easier to understand source code, doesn't consume a lot of
   memory. I have my own build, pretty minimal with just some sane patches
   applied.
-- **Terminal Emulator:**
+### Terminal Emulator
   [Simple Terminal - st](https://github.com/saifshahriar/st) (Luke Smith's Build)
   Same principle as DWM. Luke's build is almost perfect that I didn't bother
   having my own build.
-- **Shell:** [fish](https://github.com/fish-shell/fish-shell) the *Friendly
+### Shell
+  [fish](https://github.com/fish-shell/fish-shell): the **Friendly
   Interactive Shell**. I have used `zsh` for a long time. Fish provides me the
   customization I have to make in order for zsh to work. Yet, it's slow in my
   experience. I don't care about POSIX in my day to life inside shell, I am not
   writing scripts in fish. I just use it as a *default user shell* to get my job
   done.
-- **Editor/IDE:** Vim. Vim. Vim. It's less of a text editor and more of a
+### Editor/IDE
+  Vim. Vim. Vim. It's less of a text editor and more of a
   lifestyle for me. I can't think of using any other text editor except vim.
   But, the motion, I use it everywhere I can. Nowadays, I use Neovim
   (technically the same thing or not). It's a bit faster. But, I do feel
@@ -80,7 +86,8 @@ So, I am basically DOOMED! hehe.
   NO, I donot use many plugins. Just a few of them that makes my life easier.
 
 ## GUI Programs
-- **Browser:** [Brave Browser](https://brave.com/) with an insane amount of
+### Browser
+  [Brave Browser](https://brave.com/) with an insane amount of
   extensions.
 
   >Why not a minimal web browser?
@@ -101,12 +108,15 @@ So, I am basically DOOMED! hehe.
   See the [browser extensions](#browser-extensions) section to about my
   day-to-day most used
   extensions.
-- **File Manager:** I for the most part donot use or need a file manager. `cd`
+### File Manager
+  I for the most part donot use or need a file manager. `cd`
   is enough. If I must use a file manager, [lf](https://github.com/gokcehan/lf)
   is enough or for GUI it's [PCManFM](https://wiki.archlinux.org/title/PCManFM).
-- **Image Viewer:** [Sxiv](https://github.com/xyb3rt/sxiv). Why not? Suckless,
+### Image Viewer
+  [Sxiv](https://github.com/xyb3rt/sxiv). Why not? Suckless,
   fast, extensible.
-- **Video & Audio:** [mpv](https://mpv.io/) is THE BEST video player ever
+## Video & Audio
+  [mpv](https://mpv.io/) is THE BEST video player ever
   created. Lol.
 
 ## Tools
@@ -132,31 +142,32 @@ So, I am basically DOOMED! hehe.
 
 ## Browser Extensions
 This part is so bloated. Stay away...
-- **General:**
-    - [Dark Reader](https://darkreader.org/): Heals your eyes by turning every
+### General
+- [Dark Reader](https://darkreader.org/): Heals your eyes by turning every
     webpage dark.
-    - [Scrollbar Customizer](https://chromewebstore.google.com/detail/scrollbar-customizer/flffekjijpabhjgpoapooggncnmcjopa):
-    Hides ugly scrollbar in chromium and saves spaces.
-    - [Vimium C](https://github.com/gdh1995/vimium-c): Makes me a hackerrr while
-    I am using my browser. Power of VI
-      navigation within the browser.
-    - [Firenvim](https://github.com/glacambre/firenvim): Turns any text field
-    into a (neo)vim buffer.
-- **Privacy:**
-    - [uBlock Origin](https://ublockorigin.com/): Unfortunately dead on the
-      chormium side. :(
-    - [User Agent Switcher](https://github.com/ray-lothian/UserAgent-Switcher)
-- **Competitive Programming:** I do do Competitive Programming. :D
-    - [Carrot](): Rating predictor for Codeforces.
-    - [CF Analytics](): Analyse Codeforces profiles.
-    - [CF World Standings](): Filters the standings for a given contest on
-    Codeforces to show only active competitors of a specific country.
-    - [Codeforces Enhancer](): Multiple ratings graph, colorizes standings,
-    adds "Hide/Show solved problems" link.
-    - [Codeforces Practice Tracker](): Track practice progress on Codeforces.
-    - [Competitive Companion](): Parses competitive programming problems and
-    sends them to various tools like CP Editor and CPH. I use it with a CP
-    plugin in Neovim.
+- [Scrollbar Customizer](https://chromewebstore.google.com/detail/scrollbar-customizer/flffekjijpabhjgpoapooggncnmcjopa):
+Hides ugly scrollbar in chromium and saves spaces.
+- [Vimium C](https://github.com/gdh1995/vimium-c): Makes me a hackerrr while
+I am using my browser. Power of VI
+  navigation within the browser.
+- [Firenvim](https://github.com/glacambre/firenvim): Turns any text field
+into a (neo)vim buffer.
+### Privacy
+- [uBlock Origin](https://ublockorigin.com/): Unfortunately dead on the
+  chormium side. :(
+- [User Agent Switcher](https://github.com/ray-lothian/UserAgent-Switcher)
+### Competitive Programming
+I do do Competitive Programming. :D
+- [Carrot](): Rating predictor for Codeforces.
+- [CF Analytics](): Analyse Codeforces profiles.
+- [CF World Standings](): Filters the standings for a given contest on
+Codeforces to show only active competitors of a specific country.
+- [Codeforces Enhancer](): Multiple ratings graph, colorizes standings,
+adds "Hide/Show solved problems" link.
+- [Codeforces Practice Tracker](): Track practice progress on Codeforces.
+- [Competitive Companion](): Parses competitive programming problems and
+sends them to various tools like CP Editor and CPH. I use it with a CP
+plugin in Neovim.
 
 ## My dots
 You can find them here:

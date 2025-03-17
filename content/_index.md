@@ -4,14 +4,11 @@ date = 2022-08-25T21:30:04+08:00
 draft = false
 +++
 
-⚠️ This Webpage is Under Construction
-====================================
-
 # Welcome
 
 **This is me**
 
-{{< figure src="../assets/img/saif.webp" alt="Terminal Theme Preview" style="width: 50%;" position="center" >}}
+![a picture of myself](../assets/img/saif.webp)
 
 *Didn't liek?*
 *Here's something else...*
