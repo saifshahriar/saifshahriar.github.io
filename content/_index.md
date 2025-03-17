@@ -32,8 +32,8 @@ Posts by [[tags](/tags)] [[categories](/categories)]
     - [Stuff that I use on daily basis](./blogs/stuff-i-use)
 - Blogs
     - [Archlinux Installation Guide](./blogs/install-arch)
-    - [Obscure Useful Commands](../blogs/obscure-useful-commands)
+    - [Obscure Useful Commands](./blogs/obscure-useful-commands)
 - Projects
-    - [A Minimal Hex Color Code Generator/Previewer](https://hex-color-previewer.vercel.app/)
+    - [A Minimal Hex Color Code Generator/Previewer](./projects/hex-color-preview/)
 - Books
-    - [GNU C Language Manual](../books/gnu-c-language-manual)
+    - [GNU C Language Manual](./books/gnu-c-language-manual)

@@ -1,10 +1,11 @@
 +++
-title="Programs that I use on a daily basis"
+title="Programmes that I use on a daily basis"
 author="Saif Shahriar"
 date="2024-10-19"
 toc = true
 tocBorder = true
 mathjax=true
+categories=["personal"]
 +++
 
 ## Intro
