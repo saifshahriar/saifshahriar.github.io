@@ -1,0 +1,11 @@
+<h2>Categories</h2>
+<ul>
+    {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+    <li>
+         {{ (index $taxonomy 0).Lastmod.Format "2006-01-02" }}
+        <a href="{{ "/categories/" | relURL }}{{ urlize .Page.Title }}">{{ $name }}</a>
+        ({{ len $taxonomy }})
+    </li>
+    {{ end }}
+</ul>
+

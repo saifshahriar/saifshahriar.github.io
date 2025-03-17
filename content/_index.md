@@ -8,12 +8,21 @@ draft = false
 
 **This is me**
 
-![a picture of myself](../assets/img/saif.webp)
+{{<
+    img
+    src="./assets/img/saif.webp"
+    width="50%"
+    style="float: left;"
+    alt="a picture of myself"
+    mouse="a picture of myself"
+    caption="picture of myself"
+>}}
 
 *Didn't liek?*
 *Here's something else...*
 
 ---
+
 My Stuff
 
 Posts by [[tags](/tags)] [[categories](/categories)]

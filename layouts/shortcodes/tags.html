@@ -1,0 +1,9 @@
+<h2>Tags</h2>
+<ul>
+    {{ range .Site.Taxonomies.tags.ByPublishDate.Reverse }}
+        <li>
+            {{ .Name }}
+            ({{ len .Pages }})
+        </li>
+    {{ end }}
+</ul>
