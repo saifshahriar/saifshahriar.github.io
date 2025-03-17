@@ -6,11 +6,13 @@ draft = false
 
 # Welcome
 
+{{% center %}}
 **This is me**
 
 {{<
     img
-    src="./assets/img/saif.webp"
+    src="./assets/img/img.jpg"
+    link="./assets/img/img.jpg"
     width="50%"
     style="float: left;"
     alt="a picture of myself"
@@ -18,8 +20,11 @@ draft = false
     caption="picture of myself"
 >}}
 
+
+
 *Didn't liek?*
 *Here's something else...*
+{{% /center %}}
 
 ---
 
@@ -27,8 +32,8 @@ My Stuff
 
 Posts by [[tags](/tags)] [[categories](/categories)]
 
-
 - About Me
+    - [whoami](./whoami/)
     - [Stuff that I use on daily basis](./blogs/stuff-i-use)
 - Blogs
     - [Archlinux Installation Guide](./blogs/install-arch)
