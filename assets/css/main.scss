@@ -30,6 +30,7 @@
   details summary {
     color: $--primary-text-color;
     text-decoration: none;
+    &:hover { cursor: pointer; }
   }
 
   code:not(pre > code) {
