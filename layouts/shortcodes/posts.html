@@ -1,8 +1,8 @@
 <ul>
-  {{ range .Site.RegularPages }}
-    <li>
-      {{ .Date.Format "2006-01-02" }}
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-    </li>
-  {{ end }}
+	{{ range .Site.RegularPages }}
+	<li>
+		{{ .Date.Format "2006-01-02" }}
+		<a href="{{ .Permalink }}">{{ .Title }}</a>
+	</li>
+	{{ end }}
 </ul>
