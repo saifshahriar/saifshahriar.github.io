@@ -6,6 +6,7 @@ draft = false
 
 # Welcome
 
+<!-- prettier-ignore-start -->
 {{% center %}}
 **This is me**
 
@@ -21,10 +22,10 @@ draft = false
 >}}
 
 
-
 *Didn't liek?*
 *Here's something else...*
 {{% /center %}}
+<!-- prettier-ignore-end -->
 
 ---
 
@@ -33,12 +34,12 @@ My Stuff
 Posts by [[tags](/tags)] [[categories](/categories)]
 
 - About Me
-    - [whoami](./whoami/)
-    - [Stuff that I use on daily basis](./blogs/stuff-i-use)
+  - [whoami](./whoami/)
+  - [Stuff that I use on daily basis](./blogs/stuff-i-use)
 - Blogs
-    - [Archlinux Installation Guide](./blogs/install-arch)
-    - [Obscure Useful Commands](./blogs/obscure-useful-commands)
+  - [Archlinux Installation Guide](./blogs/install-arch)
+  - [Obscure Useful Commands](./blogs/obscure-useful-commands)
 - Projects
-    - [A Minimal Hex Color Code Generator/Previewer](./projects/hex-color-preview/)
+  - [A Minimal Hex Color Code Generator/Previewer](./projects/hex-color-preview/)
 - Books
-    - [GNU C Language Manual](./books/gnu-c-language-manual)
+  - [GNU C Language Manual](./books/gnu-c-language-manual)
