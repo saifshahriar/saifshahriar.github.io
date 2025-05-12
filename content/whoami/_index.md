@@ -28,11 +28,11 @@ as a software engineering intern.
 
 <!-- prettier-ignore -->
 {{% center %}}
-[[portfolio](../portfolio/)] [[projects](../projects/)]
+[[projects](../projects/)]
 [[github](https://github.com/saifshahriar)] [[youtube]()]
 {{% /center %}}
 
-Interested Fields: [#systems_engineering]() [#low_level_computing]()
+**Interested Fields:** [#systems_engineering]() [#low_level_computing]()
 [#human_computer_interaction]() [#operating_systems]() [#machine_learning]()
 [#data_science]() [#theoretical_physics]() [#quantum_mechanics]()
 [#general_relativity]() [#astrophysics]() [#bioinformatics]()
