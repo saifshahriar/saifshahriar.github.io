@@ -72,7 +72,7 @@ Another nifty tool that I like to use along with `cargo-binstall` is
 `cargo-install-update`. It allows you to update all the installed Rust binaries
 without you manually checking for updates and selecting packages to.
 
-### Usage:
+### Usage
 
 1. **Update a specific binary**: Suppose you want to update `bat`:
 
@@ -109,7 +109,7 @@ without you manually checking for updates and selecting packages to.
 Looks like I need to update `cargo-binstall`. BTW, realised you can also list
 all the installed binaries in this manner?
 
-## Links:
+## Links
 
 - `cargo-binstall`: https://github.com/cargo-bins/cargo-binstall
 - `cargo-install-update`: https://github.com/nabijaczleweli/cargo-update
