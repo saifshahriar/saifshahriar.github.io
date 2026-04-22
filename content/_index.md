@@ -29,6 +29,8 @@ draft = false
 
 ---
 
+Visit my bloated [[portfolio](https://saif-portfolio-seven.vercel.app/)]
+
 My Stuff
 
 Posts by [[tags](/tags)] [[categories](/categories)]
